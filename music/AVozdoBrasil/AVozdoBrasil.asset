@@ -1,0 +1,101 @@
+#Song definition
+#name is the song's ID, as well as its localisation key for name assignment within a Localisation file as song_name:0 "Song's Name". 
+#It cannot contain more than 63 characters.
+#file is the song's filename, including the *.ogg extension.
+#volume allows to adjust the volume of the *.ogg file without editing it.
+
+music = {
+    name = "a_lua_veio_ver"
+    file = "a_lua_veio_ver.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "atraente"
+    file = "atraente.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "avante"
+    file = "avante.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "brasil_brasileiro"
+    file = "brasil_brasileiro.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "cancao_do_exercito"
+    file = "cancao_do_exercito.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "de_pe"
+    file = "de_pe.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "himno_constitucionalista"
+    file = "himno_constitucionalista.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "hino_da_independencia"
+    file = "hino_da_independencia.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "hino_da_proclamacao_da_republica"
+    file = "hino_da_proclamacao_da_republica.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "hino_nacional"
+    file = "hino_nacional.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "o_corta_jaca"
+    file = "o_corta_jaca.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "o_que"
+    file = "o_que.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "pixinguinha"
+    file = "pixinguinha.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "quanta_tristeza"
+    file = "quanta_tristeza.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "quatro_tenentes"
+    file = "quatro_tenentes.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "sentinela_do_brazil"
+    file = "sentinela_do_brazil.ogg"
+    volume = 0.65
+}

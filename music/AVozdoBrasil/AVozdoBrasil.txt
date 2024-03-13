@@ -1,0 +1,134 @@
+#Assigning to a station
+#song accepts the ID of the song, defined as its name within the *.asset file.
+#chance defines the chance for a song to be picked if the playmode is set to Weighted Shuffle. 
+#The allowed arguments are factor, for multiplying the chance, add, for adding to the chance, and base, replacing the chance entirely. 
+#modifier = {} allows the argument to modify the chance only be executed if all of the triggers within are met.
+
+music_station = "AVozdoBrasil"
+music = {
+    song = "a_lua_veio_ver"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "atraente"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "avante"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "brasil_brasileiro"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "cancao_do_exercito"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "de_pe"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "himno_constitucionalista"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "hino_da_independencia"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "hino_da_proclamacao_da_republica"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "hino_nacional"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "o_corta_jaca"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "o_que"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "pixinguinha"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "quanta_tristeza"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "quatro_tenentes"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+
+music = {
+    song = "sentinela_do_brazil"
+    chance = {
+      modifier = { factor = 1 }
+      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
