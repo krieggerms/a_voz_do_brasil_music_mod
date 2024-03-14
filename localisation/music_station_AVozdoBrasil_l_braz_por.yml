@@ -1,9 +1,9 @@
-﻿l_english:
+﻿l_braz_por:
 
-# Station Name
+# Nome da Estacao
  AVozdoBrasil_TITLE: "A Voz do Brasil"
 
-# Songs
+# Musicas
  a_lua_veio_ver: "A lua veio ver"
  o_que: "O que será de mim"
  pixinguinha: "Urubu Malandro"
@@ -17,9 +17,9 @@
  o_corta_jaca: "O Corta Jaca!"
  brasil_brasileiro: "Brasil Brasileiro"
  quanta_tristeza: "Quanta Tristeza"
- #Republican
+ #Republicano
  hino_da_proclamacao_da_republica: "Hino da Proclamação da República"
- #Monarchist
+ #Monarquista
  hino_da_independencia: "Hino da Independência/Hino do Império do Brasil"
- #Fascist
+ #Fascista
  avante: "Avante!"
