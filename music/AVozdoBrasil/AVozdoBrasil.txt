@@ -5,130 +5,368 @@
 #modifier = {} allows the argument to modify the chance only be executed if all of the triggers within are met.
 
 music_station = "AVozdoBrasil"
+
+#General
 music = {
-    song = "a_lua_veio_ver"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
+  song = "a_lua_veio_ver"
+
+  chance = {
+      factor = 1
+
+      modifier = {
+          factor = 0
+          NOT = {
+              tag = BRA
+          }
+      }
+
+      modifier = {
+          factor = 2
+          tag = BRA
+      }
+  }
 }
+
 
 music = {
     song = "atraente"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
-}
 
-music = {
-    song = "avante"
     chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
+      factor = 1
+
+      modifier = {
+          factor = 0
+          NOT = {
+              tag = BRA
+          }
+      }
+
+      modifier = {
+          factor = 2
+          tag = BRA
+      }
+  }
 }
 
 music = {
     song = "brasil_brasileiro"
+
     chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
+      factor = 1
+
+      modifier = {
+          factor = 0
+          NOT = {
+              tag = BRA
+          }
+      }
+
+      modifier = {
+          factor = 2
+          tag = BRA
+      }
+  }
 }
 
 music = {
     song = "cancao_do_exercito"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
-}
 
-music = {
-    song = "de_pe"
     chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
-}
+      factor = 1
 
-music = {
-    song = "himno_constitucionalista"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
-}
+      modifier = {
+          factor = 0
+          NOT = {
+              tag = BRA
+          }
+      }
 
-music = {
-    song = "hino_da_independencia"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
-}
-
-music = {
-    song = "hino_da_proclamacao_da_republica"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
-}
-
-music = {
-    song = "hino_nacional"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
+      modifier = {
+          factor = 2
+          tag = BRA
+      }
+  }
 }
 
 music = {
     song = "o_corta_jaca"
+
     chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
+      factor = 1
+
+      modifier = {
+          factor = 0
+          NOT = {
+              tag = BRA
+          }
+      }
+
+      modifier = {
+          factor = 2
+          tag = BRA
+      }
+  }
 }
 
 music = {
     song = "o_que"
+
     chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
+      factor = 1
+
+      modifier = {
+          factor = 0
+          NOT = {
+              tag = BRA
+          }
+      }
+
+      modifier = {
+          factor = 2
+          tag = BRA
+      }
+  }
 }
 
 music = {
     song = "pixinguinha"
+
     chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
+      factor = 1
+
+      modifier = {
+          factor = 0
+          NOT = {
+              tag = BRA
+          }
+      }
+
+      modifier = {
+          factor = 2
+          tag = BRA
+      }
+  }
 }
 
 music = {
     song = "quanta_tristeza"
+
     chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
+      factor = 1
+
+      modifier = {
+          factor = 0
+          NOT = {
+              tag = BRA
+          }
+      }
+
+      modifier = {
+          factor = 2
+          tag = BRA
+      }
+  }
 }
 
 music = {
     song = "quatro_tenentes"
+
     chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
-    }
+      factor = 1
+
+      modifier = {
+          factor = 0
+          NOT = {
+              tag = BRA
+          }
+      }
+
+      modifier = {
+          factor = 2
+          tag = BRA
+      }
+  }
+}
+
+#Monarchist
+music = {
+  song = "hino_da_independencia"
+  
+  chance = {
+      factor = 1
+      
+      modifier = {
+          factor = 0
+          OR = {
+              has_government = communism
+              has_government = fascism
+          }
+          AND = {
+              NOT = {
+                  OR = {
+                      has_country_leader = { character = BRA_pedro_henrique }
+                      has_country_leader = { character = BRA_pedro_de_alcantara }
+                  }
+              }
+              tag = BRA
+          }
+      }
+      
+      modifier = {
+          factor = 2
+          OR = {
+              has_country_leader = { character = BRA_pedro_henrique }
+              has_country_leader = { character = BRA_pedro_de_alcantara }
+          }
+          AND = {
+              tag = BRA
+          }
+      }
+  }
+}
+
+#Democratic/Republic
+music = {
+  song = "himno_constitucionalista"
+  
+  chance = {
+      factor = 1
+      
+      modifier = {
+          factor = 0
+          AND = {
+              NOT = {
+                  has_country_leader = { character = BRA_getulio_vargas }
+              }
+              tag = BRA
+          }
+      }
+  }
 }
 
 music = {
-    song = "sentinela_do_brazil"
-    chance = {
-      modifier = { factor = 1 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+  song = "hino_da_proclamacao_da_republica"
+  
+  chance = {
+    factor = 1
+
+    modifier = {
+      factor = 0
+      NOT = {
+        AND = {
+          NOT = { has_government = democratic }
+          tag = BRA     
+        }
+      }
     }
+
+    modifier = {
+      factor = 2
+      has_government = democratic
+      tag = BRA
+    }
+  }
+}
+
+music = {
+  song = "hino_nacional"
+  
+  chance = {
+    factor = 1
+
+    chance = {
+      factor = 1
+  
+      modifier = {
+        factor = 0
+        NOT = {
+          AND = {
+            NOT = { has_government = democratic }
+            tag = BRA     
+          }
+        }
+      }
+  
+      modifier = {
+        factor = 2
+        has_government = democratic
+        tag = BRA
+      }
+    }
+}
+
+#Fascist
+music = {
+  song = "avante"
+
+  chance = {
+      factor = 1
+
+      modifier = {
+          factor = 0
+          OR = {
+              NOT = { has_government = fascism }
+              NOT = { tag = BRA }
+          }
+      }
+
+      modifier = {
+          factor = 2
+          has_government = fascism
+          tag = BRA
+      }
+  }
+}
+
+#War 
+music = {
+  song = "de_pe"
+
+  chance = {
+    factor = 1
+
+    modifier = {
+        factor = 0
+        NOT = {
+            AND = {
+                tag = BRA
+                has_war = yes
+            }
+        }
+    }
+
+    modifier = {
+        factor = 2
+        AND = {
+            tag = BRA
+            has_war = yes
+        }
+    }
+  }
+}
+
+music = {
+  song = "sentinela_do_brazil"
+
+  chance = {
+      factor = 1
+
+      modifier = {
+          factor = 0
+          NOT = {
+              AND = {
+                  tag = BRA
+                  has_war = yes
+              }
+          }
+      }
+
+      modifier = {
+          factor = 2
+          AND = {
+              tag = BRA
+              has_war = yes
+          }
+      }
+  }
 }
