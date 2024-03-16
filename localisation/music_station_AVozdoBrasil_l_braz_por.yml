@@ -1,25 +1,38 @@
 ﻿l_braz_por:
 
-# Nome da Estacao
+#Nome da Estacao
  AVozdoBrasil_TITLE: "A Voz do Brasil"
 
-# Musicas
+#Geral
  a_lua_veio_ver: "A lua veio ver"
  o_que: "O que será de mim"
  pixinguinha: "Urubu Malandro"
  atraente: "Atraente"
- hino_nacional: "Hino Nacional Brasileiro"
- cancao_do_exercito: "Canção do Exército Brasileiro"
- de_pe: "De pé, Brasil!"
- quatro_tenentes: "Quatro Tenentes"
- himno_constitucionalista: "Hino do Partido Constitucionalista"
- sentinela_do_brazil: "Sentinela do Brasil"
  o_corta_jaca: "O Corta Jaca!"
  brasil_brasileiro: "Brasil Brasileiro"
  quanta_tristeza: "Quanta Tristeza"
+
  #Republicano
  hino_da_proclamacao_da_republica: "Hino da Proclamação da República"
+ hino_nacional: "Hino Nacional Brasileiro"
+ himno_constitucionalista: "Hino do Partido Constitucionalista"
+
  #Monarquista
- hino_da_independencia: "Hino da Independência/Hino do Império do Brasil"
+ hino_da_independencia: "Hino do Império do Brasil"
+
  #Fascista
  avante: "Avante!"
+
+ #Getulista
+ a_menina_presidencia: "A Menina Presidência"
+ ai_gege: "Ai, Gê gê"
+ g_e_ge: "G e Ge (Seu Getúlio)"
+ glorias_ao_brasil: "Glórias ao Brasil"
+ o_grande_presidente: "O Grande Presidente"
+
+ #Guerra
+ de_pe: "De pé, Brasil!"
+ quatro_tenentes: "Quatro Tenentes"
+ sentinela_do_brazil: "Sentinela do Brasil"
+ cancao_do_exercito: "Canção do Exército Brasileiro"
+ quem_e_o_tal: "Quem é o Tal"

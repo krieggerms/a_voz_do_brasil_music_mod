@@ -275,23 +275,24 @@ music = {
     factor = 1
 
     chance = {
-      factor = 1
-  
-      modifier = {
-        factor = 0
-        NOT = {
-          AND = {
-            NOT = { has_government = democratic }
-            tag = BRA     
-          }
+        factor = 1
+    
+        modifier = {
+            factor = 0
+            NOT = {
+            AND = {
+                NOT = { has_government = democratic }
+                tag = BRA     
+            }
+            }
         }
-      }
-  
-      modifier = {
-        factor = 2
-        has_government = democratic
-        tag = BRA
-      }
+    
+        modifier = {
+            factor = 2
+            has_government = democratic
+            tag = BRA
+        }
+        }
     }
 }
 
@@ -316,6 +317,87 @@ music = {
           tag = BRA
       }
   }
+}
+
+#Getulio_Vargas
+music = {
+    song = "a_menina_presidencia"
+    
+    chance = {
+        factor = 1
+        
+        modifier = {
+            factor = 2
+            AND = {
+                has_country_leader = { character = BRA_getulio_vargas }
+                tag = BRA
+            }
+        }
+    }
+}
+
+music = {
+    song = "ai_gege"
+    
+    chance = {
+        factor = 1
+        
+        modifier = {
+            factor = 2
+            AND = {
+                has_country_leader = { character = BRA_getulio_vargas }
+                tag = BRA
+            }
+        }
+    }
+}
+
+music = {
+    song = "g_e_ge"
+    
+    chance = {
+        factor = 1
+        
+        modifier = {
+            factor = 2
+            AND = {
+                has_country_leader = { character = BRA_getulio_vargas }
+                tag = BRA
+            }
+        }
+    }
+}
+
+music = {
+    song = "glorias_ao_brasil"
+    
+    chance = {
+        factor = 1
+        
+        modifier = {
+            factor = 2
+            AND = {
+                has_country_leader = { character = BRA_getulio_vargas }
+                tag = BRA
+            }
+        }
+    }
+}
+
+music = {
+    song = "o_grande_presidente"
+    
+    chance = {
+        factor = 1
+        
+        modifier = {
+            factor = 2
+            AND = {
+                has_country_leader = { character = BRA_getulio_vargas }
+                tag = BRA
+            }
+        }
+    }
 }
 
 #War 
@@ -369,4 +451,30 @@ music = {
           }
       }
   }
+}
+
+music = {
+    song = "quem_e_o_tal"
+    
+    chance = {
+        factor = 1
+        
+        modifier = {
+            factor = 0
+            AND = {
+                NOT = { has_war_with = GER }
+                NOT = { has_country_leader = { character = GER_adolf_hitler } }
+                NOT = { tag = BRA }
+            }
+        }
+        
+        modifier = {
+            factor = 2
+            AND = {
+                has_war_with = GER
+                has_country_leader = { character = GER_adolf_hitler }
+                tag = BRA
+            }
+        }
+    }
 }
