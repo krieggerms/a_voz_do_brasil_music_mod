@@ -8,6 +8,46 @@ music_station = "AVozdoBrasil"
 
 #General
 music = {
+  song = "il_guarani"
+
+  chance = {
+      factor = 1
+
+      modifier = {
+          factor = 0
+          NOT = {
+              tag = BRA
+          }
+      }
+
+      modifier = {
+          factor = 2
+          tag = BRA
+      }
+  }
+}
+
+music = {
+  song = "itarare"
+
+  chance = {
+      factor = 1
+
+      modifier = {
+          factor = 0
+          NOT = {
+              tag = BRA
+          }
+      }
+
+      modifier = {
+          factor = 2
+          tag = BRA
+      }
+  }
+}
+
+music = {
   song = "a_lua_veio_ver"
 
   chance = {
@@ -169,6 +209,26 @@ music = {
 }
 
 music = {
+    song = "hino_a_bandeira_nacional"
+
+    chance = {
+      factor = 1
+
+      modifier = {
+          factor = 0
+          NOT = {
+              tag = BRA
+          }
+      }
+
+      modifier = {
+          factor = 2
+          tag = BRA
+      }
+  }
+}
+
+music = {
     song = "quatro_tenentes"
 
     chance = {
@@ -190,7 +250,7 @@ music = {
 
 #Monarchist
 music = {
-  song = "hino_da_independencia"
+  song = "hino_do_imperio_do_brasil"
   
   chance = {
       factor = 1
@@ -251,13 +311,11 @@ music = {
     factor = 1
 
     modifier = {
-      factor = 0
-      NOT = {
+        factor = 0
         AND = {
-          NOT = { has_government = democratic }
-          tag = BRA     
+            NOT = { has_government = democratic }
+            NOT = { tag = BRA }
         }
-      }
     }
 
     modifier = {
@@ -269,31 +327,48 @@ music = {
 }
 
 music = {
-  song = "hino_nacional"
+    song = "hino_nacional"
+    
+    chance = {
+        factor = 1
+        
+        modifier = {
+            factor = 0
+            AND = {
+                NOT = { has_government = democratic }
+                NOT = { tag = BRA }
+            }
+        }
+        
+        modifier = {
+            factor = 2
+            AND = {
+                has_government = democratic
+                tag = BRA
+            }
+        }
+    }
+}
+
+music = {
+  song = "galinha_verde"
   
   chance = {
     factor = 1
 
-    chance = {
-        factor = 1
-    
-        modifier = {
-            factor = 0
-            NOT = {
-            AND = {
-                NOT = { has_government = democratic }
-                tag = BRA     
-            }
-            }
-        }
-    
-        modifier = {
-            factor = 2
-            has_government = democratic
+    modifier = {
+        factor = 0
+        AND = {
+            has_government = fascism
             tag = BRA
         }
-        }
     }
+
+    modifier = {
+      factor = 2
+      tag = BRA
+    }
+  }
 }
 
 #Fascist
@@ -305,7 +380,7 @@ music = {
 
       modifier = {
           factor = 0
-          OR = {
+          AND = {
               NOT = { has_government = fascism }
               NOT = { tag = BRA }
           }
@@ -325,6 +400,16 @@ music = {
     
     chance = {
         factor = 1
+
+        modifier = {
+            factor = 0
+            NOT = {
+                AND = {
+                    has_country_leader = { character = BRA_getulio_vargas }
+                    tag = BRA
+                }
+            }
+        }
         
         modifier = {
             factor = 2
@@ -343,6 +428,16 @@ music = {
         factor = 1
         
         modifier = {
+            factor = 0
+            NOT = {
+                AND = {
+                    has_country_leader = { character = BRA_getulio_vargas }
+                    tag = BRA
+                }
+            }
+        }
+        
+        modifier = {
             factor = 2
             AND = {
                 has_country_leader = { character = BRA_getulio_vargas }
@@ -357,6 +452,16 @@ music = {
     
     chance = {
         factor = 1
+        
+        modifier = {
+            factor = 0
+            NOT = {
+                AND = {
+                    has_country_leader = { character = BRA_getulio_vargas }
+                    tag = BRA
+                }
+            }
+        }
         
         modifier = {
             factor = 2
@@ -375,6 +480,16 @@ music = {
         factor = 1
         
         modifier = {
+            factor = 0
+            NOT = {
+                AND = {
+                    has_country_leader = { character = BRA_getulio_vargas }
+                    tag = BRA
+                }
+            }
+        }
+        
+        modifier = {
             factor = 2
             AND = {
                 has_country_leader = { character = BRA_getulio_vargas }
@@ -391,6 +506,16 @@ music = {
         factor = 1
         
         modifier = {
+            factor = 0
+            NOT = {
+                AND = {
+                    has_country_leader = { character = BRA_getulio_vargas }
+                    tag = BRA
+                }
+            }
+        }
+        
+        modifier = {
             factor = 2
             AND = {
                 has_country_leader = { character = BRA_getulio_vargas }
@@ -400,7 +525,140 @@ music = {
     }
 }
 
-#War 
+music = {
+    song = "retrato_do_velho"
+    
+    chance = {
+        factor = 1
+        
+        modifier = {
+            factor = 0
+            NOT = {
+                AND = {
+                    has_country_leader = { character = BRA_getulio_vargas }
+                    tag = BRA
+                }
+            }
+        }
+        
+        modifier = {
+            factor = 2
+            AND = {
+                has_country_leader = { character = BRA_getulio_vargas }
+                tag = BRA
+            }
+        }
+    }
+}
+
+music = {
+    song = "hino_do_ptb"
+    
+    chance = {
+        factor = 1
+        
+        modifier = {
+            factor = 0
+            NOT = {
+                AND = {
+                    has_country_leader = { character = BRA_getulio_vargas }
+                    has_government = fascism
+                    tag = BRA
+                }
+            }
+        }
+        
+        modifier = {
+            factor = 2
+            AND = {
+                has_country_leader = { character = BRA_getulio_vargas }
+                tag = BRA
+            }
+        }
+    }
+}
+
+music = {
+    song = "19_de_abril"
+    
+    chance = {
+        factor = 1
+
+        modifier = {
+            factor = 0
+            NOT = {
+                AND = {
+                    has_country_leader = { character = BRA_getulio_vargas }
+                    tag = BRA
+                }
+            }
+        }
+        
+        modifier = {
+            factor = 2
+            AND = {
+                has_country_leader = { character = BRA_getulio_vargas }
+                tag = BRA
+            }
+        }
+    }
+}
+
+#Dutra
+music = {
+    song = "marmiteiro"
+    
+    chance = {
+        factor = 1
+        
+        modifier = {
+            factor = 0
+            NOT = {
+                AND = {
+                    has_country_leader = { character = BRA_eurico_gaspar_dutra }
+                    tag = BRA
+                }
+            }
+        }
+        
+        modifier = {
+            factor = 2
+            AND = {
+                has_country_leader = { character = BRA_eurico_gaspar_dutra }
+                tag = BRA
+            }
+        }
+    }
+}
+
+
+#War
+music = {
+  song = "cancao_do_expedicionario"
+
+  chance = {
+    factor = 1
+
+    modifier = {
+        factor = 0
+        NOT = {
+            AND = {
+                tag = BRA
+                has_war = yes
+            }
+        }
+    }
+
+    modifier = {
+        factor = 2
+        AND = {
+            tag = BRA
+            has_war = yes
+        }
+    }
+  }
+}
+
 music = {
   song = "de_pe"
 
@@ -454,7 +712,109 @@ music = {
 }
 
 music = {
+  song = "salve_a_mulher_brasileira"
+
+  chance = {
+      factor = 1
+
+      modifier = {
+          factor = 0
+          NOT = {
+              AND = {
+                  tag = BRA
+                  has_war = yes
+              }
+          }
+      }
+
+      modifier = {
+          factor = 2
+          AND = {
+              tag = BRA
+              has_war = yes
+          }
+      }
+  }
+}
+
+music = {
+  song = "batista_de_melo"
+
+  chance = {
+      factor = 1
+
+      modifier = {
+          factor = 0
+          NOT = {
+              AND = {
+                  tag = BRA
+                  has_war = yes
+              }
+          }
+      }
+
+      modifier = {
+          factor = 2
+          AND = {
+              tag = BRA
+              has_war = yes
+          }
+      }
+  }
+}
+
+music = {
     song = "quem_e_o_tal"
+    
+    chance = {
+        factor = 1
+        
+        modifier = {
+            factor = 0
+            AND = {
+                NOT = { has_war_with = GER }
+                NOT = { has_country_leader = { character = GER_adolf_hitler } }
+                NOT = { tag = BRA }
+            }
+        }
+        
+        modifier = {
+            factor = 2
+            AND = {
+                has_war_with = GER
+                has_country_leader = { character = GER_adolf_hitler }
+                tag = BRA
+            }
+        }
+    }
+}
+
+music = {
+    song = "pro_brasileiro_alemao_e_sopa"
+    
+    chance = {
+        factor = 1
+        
+        modifier = {
+            factor = 0
+            AND = {
+                NOT = { has_war_with = GER }
+                NOT = { tag = BRA }
+            }
+        }
+        
+        modifier = {
+            factor = 2
+            AND = {
+                has_war_with = GER
+                tag = BRA
+            }
+        }
+    }
+}
+
+music = {
+    song = "abaixa_o_braco"
     
     chance = {
         factor = 1

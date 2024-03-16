@@ -1,38 +1,53 @@
 ﻿l_braz_por:
 
-#Nome da Estacao
+#Nome_da_Estacao
  AVozdoBrasil_TITLE: "A Voz do Brasil"
 
 #Geral
- a_lua_veio_ver: "A lua veio ver"
- o_que: "O que será de mim"
+ a_lua_veio_ver: "A Lua Veio Ver"
+ o_que: "O Que Será de Mim"
  pixinguinha: "Urubu Malandro"
  atraente: "Atraente"
  o_corta_jaca: "O Corta Jaca!"
  brasil_brasileiro: "Brasil Brasileiro"
  quanta_tristeza: "Quanta Tristeza"
+ itarare: "Itararé"
+ hino_a_bandeira_nacional: "Hino à Bandeira Nacional"
+ il_guarani: "Il Guarany"
 
- #Republicano
+#Republicano
  hino_da_proclamacao_da_republica: "Hino da Proclamação da República"
  hino_nacional: "Hino Nacional Brasileiro"
  himno_constitucionalista: "Hino do Partido Constitucionalista"
+ galinha_verde: "Galinha Verde"
 
- #Monarquista
- hino_da_independencia: "Hino do Império do Brasil"
+#Monarquista
+ hino_do_imperio_do_brasil: "Hino do Império do Brasil"
 
- #Fascista
+#Fascista
  avante: "Avante!"
 
- #Getulista
+#Getulista
  a_menina_presidencia: "A Menina Presidência"
  ai_gege: "Ai, Gê gê"
  g_e_ge: "G e Ge (Seu Getúlio)"
  glorias_ao_brasil: "Glórias ao Brasil"
  o_grande_presidente: "O Grande Presidente"
+ retrato_do_velho: "Retrato do Velho"
+ hino_do_ptb: "Hino do PTB"
+ 19_de_abril: "19 de Abril"
 
- #Guerra
+#Dutra
+ marmiteiro: "Marmiteiro"
+
+#Guerra
+ cancao_do_expedicionario: "Canção do Expedicionário"
  de_pe: "De pé, Brasil!"
  quatro_tenentes: "Quatro Tenentes"
  sentinela_do_brazil: "Sentinela do Brasil"
  cancao_do_exercito: "Canção do Exército Brasileiro"
  quem_e_o_tal: "Quem é o Tal"
+ pro_brasileiro_alemao_e_sopa: "Pro Brasileiro, Alemão é Sopa"
+ abaixa_o_braco: "Abaixa o Braço"
+ salve_a_mulher_brasileira: "Salve a Mulher Brasileira"
+ batista_de_melo: "Batista de Melo"
